@@ -1,8 +1,8 @@
-import { View, Text } from 'react-native'
+import { View } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import PageContainer from '../components/PageContainer'
-import { COLORS, FONTS } from '../constants'
+import { COLORS } from '../constants'
 import { AntDesign } from '@expo/vector-icons'
 import Input from '../components/Input'
 import Button from '../components/Button'
@@ -61,6 +61,9 @@ const ProfileAccount = ({ navigation }) => {
                                 paddingVertical: 12,
                                 marginBottom: 48,
                             }}
+                            onPress={() =>
+                                navigation.navigate('BottomTabNavigation')
+                            }
                         />
                     </View>
                 </View>
